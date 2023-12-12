@@ -24,15 +24,18 @@
                                     <constraint firstAttribute="height" constant="200" id="Hjn-ez-77D"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="64"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQ7-7K-mdk">
-                                <rect key="frame" x="120" y="558" width="152" height="35"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQ7-7K-mdk">
+                                <rect key="frame" x="120.66666666666669" y="546" width="152" height="35"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="あなたの運勢は？"/>
+                                <connections>
+                                    <action selector="getOmikuji:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xs7-yi-RoW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -41,8 +44,12 @@
                             <constraint firstItem="8FV-tV-UMC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="R7R-DD-88B"/>
                             <constraint firstItem="8FV-tV-UMC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RdT-NE-bgA"/>
                             <constraint firstItem="hQ7-7K-mdk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f9r-tT-kmE"/>
+                            <constraint firstItem="hQ7-7K-mdk" firstAttribute="top" secondItem="8FV-tV-UMC" secondAttribute="bottom" constant="20" id="p9d-qL-1az"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="myLabel" destination="8FV-tV-UMC" id="L6D-Cc-OdF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -50,6 +57,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
